@@ -17,9 +17,10 @@ const jwtKey = 'yummtumm';
 
 let users = [];
 let products = [
-  { id: 1, name: "Pizza", price: 9.99 },
-  { id: 2, name: "Burger", price: 6.49 },
-  { id: 3, name: "Pasta", price: 8.75 }
+  { id: 1, name: "Pizza", price: 10, img: "https://media.istockphoto.com/id/1218902490/photo/pizza.webp?a=1&s=612x612&w=0&k=20&c=cP-aB3dJQCVrGAdDhPsDpublf-sJ1k3OkKme9ukDXxE=" },
+  { id: 2, name: "Burger", price: 15, img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" },
+  { id: 3, name: "Pasta", price: 10, img: "https://images.unsplash.com/photo-1597131628347-c769fc631754?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fHBhc3RhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" },
+  { id: 4, name: "Fries", price: 15, img: "https://images.unsplash.com/photo-1684815495679-f6e6bc0634ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGZyaWVzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" }
 ];
 let orders = [];
 
@@ -128,3 +129,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
